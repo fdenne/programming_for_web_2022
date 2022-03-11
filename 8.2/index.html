@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.2 Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="calcApp">
+        <form>
+            <div>
+                <input type="number" v-model.number="firstNum"  placeholder="first number">
+                <select v-model="operation">
+                    <option value="add">+</option>
+                    <option value="subtract">-</option>
+                    <option value="multiply">&times;</option>
+                    <option value="divide">&divide;</option>
+                </select>
+                <input v-model.number="secondNum" type="number" placeholder="second number">
+            </div>
+            <button v-on:click="calculate(firstNum, secondNum)" type="button">Calculate</button>
+        </form>
+        <div class="total">
+           <p>Operation: </p> <p>{{operation}}</p><br>
+            <p>Total: </p> <strong> <p>{{total}}</p></strong>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
