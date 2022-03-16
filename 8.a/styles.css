@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+}
+table, thead, th, tbody, tr, td{
+    border: 0 none;
+    padding: 2em;
+}
+table {
+    width: 100%;
+    margin: auto;
+}
+.wish {
+    background: pink;
+}
+.botanicalName {
+    text-decoration-line: underline;
+}
+h1 {
+    color: olive;
+    margin-top: 2rem;
+}

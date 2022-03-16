@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <h1>Plant Collection</h1>
+    <div id="plantsApp">
+        <table>
+            <thead>
+                <th>common name</th>
+                <th>botanical name</th>
+                <th>image</th>
+                <th>collected?</th>
+            </thead>
+            <tbody>
+                <tr 
+                v-for="(plant, idx) in plants"
+                v-bind:class="{odd: idx % 2 !== 0, wish: plant.collected === 'no'}"
+                >
+                
+                    <td>{{plant.commonName}}</td>
+                    <td>{{plant.botanicalName}}</td>
+                    <td><img :src="plant.image" :alt="plant.commonName"></td>
+                    <td>{{plant.collected}}</td>
+                    <td class="cellActions">
+                        <button type="button" v-on:click="deleteItem(plant)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <form v-on:submit.prevent="submitHandler">
+            <fieldset>
+                <legend>Add a plant to the collection</legend>
+                <div>
+                    <label for="commonName">common name</label>
+                    <input id="commonName" type="text" v-model="newPlantObj.commonName">
+                </div>
+                <div>
+                    <label for="botanicalName">botanical name</label>
+                    <input id="botanicalName" type="text" v-model="newPlantObj.botanicalName">
+                </div>
+                <div>
+                    <label for="image">image</label>
+                    <input id="image" type="text" v-model="newPlantObj.image">
+                </div>
+                <div>
+                    <label for="collected">collected?</label>
+                    <input id="collected" type="text" v-model="newPlantObj.collected">
+                </div>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
