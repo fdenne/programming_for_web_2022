@@ -1,0 +1,37 @@
+[
+    {
+     "slug": "pink_princess_philodendron",
+     "commonName": "Pink Princess Philodendron",
+     "botanicalName": "Philodendron erubescens 'pink princess'",
+     "image": "https://www.teakandterracotta.com/wp-content/uploads/2021/10/Philodendron-Pink-Princess.png",
+     "collected": "yes",
+     "id": 1
+    }, {
+      "slug": "thai_constellation",
+      "commonName": "Thai Constellation",
+      "botanicalName": "Monstera Deliciosa Thai Constellation",
+      "image": "https://images.squarespace-cdn.com/content/v1/56091b78e4b09e2b03426d22/1625813221065-JZY56VRQY7BE5HSHXMNZ/Monstera+Thai+Constellation.jpg",
+      "collected": "no",
+      "id": 2
+    }, {
+      "slug": "philodendron_jungle_boogie",
+      "commonName": "Philodendron 'Jungle Boogie'",
+      "botanicalName": "Philodendron Narrow",
+      "image": "https://media.karousell.com/media/photos/products/2020/10/3/philodendron_jungle_boogie_b_1601683360_300775cf_progressive.jpg",
+      "collected": "no",
+      "id": 3
+    }, {
+      "slug": "owl_eye_peperomia",
+      "commonName": "Owl Eye Peperomia",
+      "botanicalName": "Peperomia polybotrya",
+      "image": "https://nicksgardencenter.com/wp-content/uploads/2021/06/Pep-Owl-Square.jpg",
+      "collected": "yes",
+      "id": 4
+    }, {
+      "slug": "marble_queen_pothos",
+      "commonName": "Marble Queen Pothos",
+      "botanicalName": "Epipremnum aureum 'marble queen'",
+      "image": "https://www.carouselandfolk.com/uploads/1/2/7/0/127088933/s880998267374363181_p813_i1_w3024.jpeg?width=2560",
+      "collected": "yes",
+      "id": 5
+    }]
