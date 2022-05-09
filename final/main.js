@@ -1,5 +1,9 @@
 let angleRotate = 0.0;
 let t = 0;
+let img;
+function preload() {
+    img = loadImage('img/afraid.png');
+}
 function setup() {
     createCanvas(1000, 1000);
     rectMode(CENTER);
@@ -79,7 +83,7 @@ function setup() {
     push();
     fill(0, t);
     text('guilty', 485, 375);
-        if(mouseX < 525 && mouseX > 425 && mouseY < 425 && mouseY > 325) {
+        if(mouseX < 490 && mouseX > 480 && mouseY < 380 && mouseY > 370) {
          t = 255;
         } else {
          t = 0;
@@ -87,8 +91,8 @@ function setup() {
     pop();
     push();
     fill(0, t);
-    text('ashamed', 450, 408);
-        if(mouseX < 500 && mouseX > 400 && mouseY < 400 && mouseY > 300) {
+    text('ashamed', 450, 400);
+        if(mouseX < 500 && mouseX > 400 && mouseY < 420 && mouseY > 380) {
          t = 255;
         } else {
          t = 0;
@@ -111,6 +115,9 @@ function setup() {
         } else {
          t = 0;
         }
+    pop();
+    push();
+
     pop();
   }
   
