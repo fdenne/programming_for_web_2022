@@ -1,8 +1,14 @@
 let angleRotate = 0.0;
-let t = 0;
-let img;
+let afraidimg;
+let guiltyimg;
+let anxiousimg;
+let ashamedimg;
+let boredimg;
+let confidentimg;
+
 function preload() {
-    img = loadImage('img/afraid.png');
+    afraidimg = loadImage('img/afraid.png');
+    guiltyimg = loadImage('img/guilty.png');
 }
 function setup() {
     createCanvas(1000, 1000);
@@ -81,44 +87,29 @@ function setup() {
     pop();
     // hover effect
     push();
-    fill(0, t);
-    text('guilty', 485, 375);
-        if(mouseX < 490 && mouseX > 480 && mouseY < 380 && mouseY > 370) {
-         t = 255;
-        } else {
-         t = 0;
+    if(mouseX < 505 && mouseX > 460 && mouseY < 350 && mouseY > 300) {
+         text('guilty', 485, 325);
+         ellipse(820, 250, 150, 150);
+         image(guiltyimg, 700, 150, 250, 250);
         }
-    pop();
     push();
-    fill(0, t);
-    text('ashamed', 450, 400);
         if(mouseX < 500 && mouseX > 400 && mouseY < 420 && mouseY > 380) {
-         t = 255;
-        } else {
-         t = 0;
+         text('ashamed', 450, 400);
         }
     pop();
     push();
-    fill(0, t);
-    text('lonely', 515, 385);
+    
         if(mouseX < 550 && mouseX > 450 && mouseY < 450 && mouseY > 350) {
-         t = 255;
-        } else {
-         t = 0;
+         text('lonely', 515, 385);
         }
     pop();
     push();
-    fill(0, t);
-    text('bored', 555, 390);
+    
         if(mouseX < 600 && mouseX > 500 && mouseY < 400 && mouseY > 300) {
-         t = 255;
-        } else {
-         t = 0;
+         text('bored', 555, 390);
         }
     pop();
-    push();
-
-    pop();
+    
   }
   
   function conicGradient (sA, sX, sY, colors) {
